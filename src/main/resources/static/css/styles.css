@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;  /* Ensure the body takes up the full viewport height */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;  /* Content takes up all available space */
+    display: flex;
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;      /* Centers content vertically */
+}
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    width: 100%;
+}
+
+.wrapper{
+    position: relative;
+}
+#add-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: green;
+}
+
+
+/* Минимальная ширина для столбца, чтобы кнопки влезали */
+th, td {
+  white-space: nowrap; /* Предотвращает перенос текста */
+}
+
+/* Выравнивание кнопок */
+td .d-flex {
+  justify-content: center; /* Центрирование кнопок */
+  flex-wrap: wrap; /* Если мало места, кнопки станут в столбец */
+}
+
+#btn-green{
+    background-color: orange;
+}
